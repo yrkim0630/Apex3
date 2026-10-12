@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1학년 1반 체육대회 종합 안내서</title>
+    <style>
+        :root {
+            --primary: #ff6b6b;
+            --secondary: #339af0;
+            --accent: #f59f00;
+            --bg: #f4f6f8;
+            --card-bg: #ffffff;
+            --text: #212529;
+            --gray: #868e96;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 12px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #ff8787, #339af0);
+            color: white;
+            padding: 22px 15px;
+            border-radius: 14px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.95;
+        }
+
+        /* 공지/목표 카드 스타일 */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+        }
+
+        .card.notice {
+            border-left: 5px solid var(--accent);
+            background-color: #fff9db;
+        }
+
+        .card h2 {
+            font-size: 1.1rem;
+            color: #d9480f;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .card ul {
+            list-style: none;
+            font-size: 0.9rem;
+        }
+
+        .card li {
+            margin-bottom: 6px;
+        }
+
+        /* 타임라인 스타일 */
+        .timeline-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 20px 0 10px 5px;
+            color: #343a40;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .schedule-item {
+            background-color: var(--card-bg);
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            border-left: 5px solid var(--secondary);
+        }
+
+        .schedule-item.highlight {
+            border-left-color: var(--primary);
+            background-color: #fff5f5;
+        }
+
+        .time {
+            font-size: 0.82rem;
+            font-weight: bold;
+            color: var(--gray);
+        }
+
+        .content {
+            font-size: 0.98rem;
+            font-weight: bold;
+        }
+
+        .desc {
+            font-size: 0.88rem;
+            color: #495057;
+            background-color: #f8f9fa;
+            padding: 6px 10px;
+            border-radius: 6px;
+            margin-top: 4px;
+        }
+
+        .location {
+            display: inline-block;
+            font-size: 0.78rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background-color: #e9ecef;
+            color: #495057;
+            width: fit-content;
+            margin-top: 4px;
+        }
+
+        /* 종목 안내 및 주의사항 아코디언/박스 스타일 */
+        .info-section {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+        }
+
+        .info-section h3 {
+            font-size: 1.05rem;
+            color: #1c7ed6;
+            margin-bottom: 8px;
+            border-bottom: 2px solid #e7f5ff;
+            padding-bottom: 6px;
+        }
+
+        .info-section p, .info-section li {
+            font-size: 0.88rem;
+            color: #495057;
+            margin-bottom: 6px;
+        }
+
+        .info-section ul {
+            padding-left: 18px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-bottom: 20px;
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 헤더 -->
+        <header>
+            <h1>🔥 1학년 1반 체육대회 종합 안내서</h1>
+            <p>2026학년도 덕소중학교 체육활동</p>
+        </header>
+
+        <!-- 1반 전용 안내 카드 -->
+        <div class="card notice">
+            <h2>🏆 1학년 1반 필독 공지</h2>
+            <ul>
+                <li>• <strong>우리 반 목표:</strong> 다치지 않고 즐기기 + 종합 우승 및 응원상 도전!</li>
+                <li>• <strong>아침 집결:</strong> 08:50까지 운동장 지정 구역 집결 및 출석체크 완료</li>
+                <li>• <strong>준비물:</strong> 간편복(반티), 운동화, 개인 물통, 상비약/썬크림 등</li>
+                <li>• <strong>봉사활동:</strong> 행사가 끝난 후 14:15부터 교내정화활동 참여 (봉사시간 인정)</li>
+            </ul>
+        </div>
+
+        <!-- 타임라인 일정 -->
+        <div class="timeline-title">⏰ 상세 경기 및 행사 일정</div>
+        <div class="timeline">
+
+            <div class="schedule-item">
+                <span class="time">08:50 ~ 09:00</span>
+                <span class="content">출석체크 및 운동장 집결 완료</span>
+                <span class="desc">각 반별 인원 파악 및 대형 정렬</span>
+                <span class="location">📍 운동장</span>
+            </div>
+
+            <div class="schedule-item highlight">
+                <span class="time">09:00 ~ 09:20</span>
+                <span class="content">개회선언 및 준비운동</span>
+                <span class="desc">전교생 개회식 후 종목별 경기장으로 이동</span>
+                <span class="location">📍 전교생 운동장 집결</span>
+            </div>
+
+            <div class="schedule-item">
+                <span class="time">10:20 ~ 10:30</span>
+                <span class="content">휴식 및 이동시간</span>
+                <span class="desc">⚠️ 경기 시작 전 반드시 보조 준비운동 실시!</span>
+                <span class="location">📍 이동 시간</span>
+            </div>
+
+            <div class="schedule-item">
+                <span class="time">10:30 ~ 11:30</span>
+                <span class="content">오전 1차 경기 (학년별 순환)</span>
+                <span class="desc">체육관: 피구 경기 / 각반교실: 합동 챌린지 / 운동장: 단체 경기</span>
+                <span class="location">📍 체육관, 교실, 운동장</span>
+            </div>
+
+            <div class="schedule-item">
+                <span class="time">11:30 ~ 11:40</span>
+                <span class="content">휴식 및 이동시간</span>
+                <span class="desc">⚠️ 안전사고 예방을 위한 보조 준비운동 실시</span>
+                <span class="location">📍 이동 시간</span>
+            </div>
+
+            <div class="schedule-item">
+                <span class="time">11:40 ~ 12:40</span>
+                <span class="content">오전 2차 경기 (종목 교대)</span>
+                <span class="desc">각반교실: 협동 챌린지 / 운동장: 단체 경기 / 체육관: 피구 경기</span>
+                <span class="location">📍 교실, 운동장, 체육관</span>
+            </div>
+
+            <div class="schedule-item highlight">
+                <span class="time">12:40 ~ 13:30</span>
+                <span class="content">🍱 점심시간 및 휴식</span>
+                <span class="desc">💡 체육관에서 학생자치회 스포츠 부스가 운영됩니다!</span>
+                <span class="location">📍 교실 및 체육관</span>
+            </div>
+
+            <div class="schedule-item highlight">
+                <span class="time">13:30 ~ 14:15</span>
+                <span class="content">오후 메인 행사 및 폐회식</span>
+                <span class="desc">덕소중 댄스동아리 축하공연, 학년별 단체 줄넘기, 이어달리기 결승, 시상 및 마무리</span>
+                <span class="location">📍 전교생 운동장 집결</span>
+            </div>
+
+            <div class="schedule-item">
+                <span class="time">14:15 ~ 15:00</span>
+                <span class="content">교내정화활동 (봉사활동)</span>
+                <span class="desc">구역별 환경정화 실시 후 방과 후 하교</span>
+                <span class="location">📍 학교 전체</span>
+            </div>
+
+        </div>
+
+        <!-- 세부 종목 및 운영 규칙 섹션 -->
+        <div class="info-section">
+            <h3>📌 종목별 운영 및 유의사항</h3>
+            <ul>
+                <li><strong>피구 (체육관):</strong> 학급 대항 토너먼트 또는 리그전 진행, 페어플레이 필수</li>
+                <li><strong>합동/협동 챌린지 (교실):</strong> 반 친구들과 협동심을 발휘하는 미션 수행 게임</li>
+                <li><strong>단체 경기 및 단체 줄넘기 (운동장):</strong> 학년별 단합력을 보여주는 메인 종목</li>
+                <li><strong>이어달리기 결승 (운동장):</strong> 마지막 하이라이트 트랙 경기, 큰 응원 필요!</li>
+                <li><strong>학생자치회 부스:</strong> 점심시간 체육관에서 다양한 이벤트 참여 가능</li>
+            </ul>
+        </div>
+
+        <div class="info-section" style="margin-top: 15px;">
+            <h3>🏅 시상 및 운영 계획</h3>
+            <p>• <strong>시상 부문:</strong> 종합우승, 준우승, 응원상, 질서상 등 학급 시상</p>
+            <p>• <strong>안전 수칙:</strong> 모든 경기 전 준비운동 철저, 과도한 신체 접촉 및 안전사고 주의</p>
+            <p>• <strong>복장:</strong> 활동하기 편한 체육복 또는 학급 단체티(반티) 착용</p>
+        </div>
+
+        <footer>
+            <p>2026 덕소중학교 체육활동 계획 기반 • 1학년 1반 화이팅!</p>
+        </footer>
+    </div>
+
+</body>
+</html>
